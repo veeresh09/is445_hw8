@@ -1,1 +1,34 @@
-<div>This is an example page</div>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Plot Example</title>
+</head>
+<body>
+    <h2>Plot licence expiration counts</h2>
+    <iframe src="bar_plot.html" width="100%" height="500" frameborder="0"></iframe>
+    <p><strong>Description</strong>: This plot visualizes the count of licenses expiring each year, categorized by their status (e.g., Active, Not Renewed). Users can select a specific year using a slider to see the distribution of license statuses for that year.</p>
+    <p><strong>Design Choices</strong>:</p>
+    <ul>
+        <li><strong>Encoding Types</strong>: The x-axis represents the license statuses, and the y-axis represents the count of licenses. The bars are colored by license status to differentiate between them.</li>
+        <li><strong>Color Scheme</strong>: The color scheme is categorical, with different colors representing different license statuses. This choice was made to easily distinguish between the statuses.</li>
+    </ul>
+    <p><strong>Data Transformations</strong>: The 'Expiration Date' column was converted to a datetime format, and a new column 'Expiration Year' was extracted to facilitate filtering by year.</p>
+    <p><strong>Interactivity</strong>: A slider was added to allow users to select a specific year. This interactivity helps users focus on the data for a particular year and makes the visualization more dynamic and informative.</p>
+    
+    <hr>
+    
+    <h2>License vs status</h2>
+    <iframe src="licenseVsStatus.html" width="100%" height="500" frameborder="0"></iframe>
+    <p><strong>Description</strong>: This plot shows the count of licenses for each license type, further categorized by their status. Users can select a license type from a dropdown menu to see the distribution of license statuses for that type.</p>
+    <p><strong>Design Choices</strong>:</p>
+    <ul>
+        <li><strong>Encoding Types</strong>: The x-axis represents the license statuses, and the y-axis represents the count of licenses. The bars are colored by license status to differentiate between them.</li>
+        <li><strong>Color Scheme</strong>: The color scheme is categorical, with different colors representing different license statuses. This choice was made to easily distinguish between the statuses.</li>
+    </ul>
+    <p><strong>Data Transformations</strong>: No significant data transformations were performed for this plot.</p>
+    <p><strong>Interactivity</strong>: A dropdown menu was added to allow users to select a specific license type. This interactivity helps users focus on the data for a particular license type and makes the visualization more dynamic and informative.</p>
+    <h2>Additional Resources</h2>
+    <p><a href="https://github.com/UIUC-iSchool-DataViz/is445_data/raw/main/licenses_fall2022.csv">Link to the Data</a></p>
+    <p><a href="https://github.com/veeresh09/is445_hw8/blob/main/Workbook.ipynb">Link to the Python Notebook</a></p>
+</body>
+</html>
