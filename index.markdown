@@ -4,7 +4,3 @@
 
 layout: home
 ---
-
-Here is an example plot:
-
-![Sample Plot](/assets/images/sample_plot.png)
